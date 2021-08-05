@@ -41,5 +41,13 @@ public class Main {
         int myTotal = (myMinIntValue / 2);
         byte myNewByteValue = (byte) (myMinByteValue / 2);
         short myNewShortValue = (short) (myMinShortValue / 2);
+
+        int byteValue = 10;
+        short shortValue = 20;
+        int intVariable = 50;
+        long longVariable = (50000l + ((byteValue + shortValue + intVariable) * 10l));
+        System.out.println("Long Variable = " + longVariable);
+
+        short shortTotal = (short) (1000 + (10 * (byteValue + shortValue + intVariable)));
     }
 }
