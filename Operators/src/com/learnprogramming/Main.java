@@ -51,5 +51,31 @@ public class Main {
             System.out.println("It is not an alien!");
         }
 
+        int  topScore = 100;
+        if (topScore == 100) {
+            System.out.println("You got the high score!");
+        }
+
+        topScore += 2;
+        if (topScore != 100) {
+            System.out.println("You don't get the high score!");
+        }
+
+        if (topScore > 100) {
+            System.out.println("You got the high score more then 100");
+        }
+
+        topScore -= 10;
+        if (topScore < 100) {
+            System.out.println("You got the high score less then 100");
+        }
+
+        int secondTopScore = 60;
+        if (topScore > secondTopScore && topScore < 100) {
+            System.out.println("Greater than second top score and less than 100");
+        }
+
+        
+
     }
 }
