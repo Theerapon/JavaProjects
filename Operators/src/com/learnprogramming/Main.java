@@ -103,5 +103,19 @@ public class Main {
         int ageOfClient = 20;
         boolean isEighteenOrOver = (ageOfClient >= 18) ? true : false;
         System.out.println("Age is eighteen or over = " + isEighteenOrOver);
+
+        double doubleVariable = 20.00;
+        double secondDoubleVariable = 80.00;
+        double resultDouble = (doubleVariable + secondDoubleVariable) * 100.00;
+        double remainderOfDouble = resultDouble % 40.00;
+        //remainderOfDouble = (100.00 * 100.00) % 40.00 = 0
+        boolean booVariable = (remainderOfDouble == 0) ? true : false;
+
+        System.out.println("Boolean = " + booVariable);
+
+        if (booVariable != true) {
+            System.out.println("Got some remainder");
+        }
+
     }
 }
