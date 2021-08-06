@@ -6,12 +6,19 @@ public class Main {
 
     private static final String INST_INVALID_VALUE = "Invalid value";
     private static final int INST_SECOND_PER_MINUTE = 60;
+    private static final int INST_SECOND_PER_HOUR = 3600;
 
     public static void main(String[] args) {
         System.out.println(getDurationString(3657));
         System.out.println(getDurationString(54, 23));
         System.out.println(getDurationString(61, 0));
+        System.out.println(getDurationString(71, 159, 98));
     }
+
+    public static String getDurationString(int hours, int minutes, int seconds) {
+        return getDurationStringBySeconds((hours * INST_SECOND_PER_HOUR) + (minutes * INST_SECOND_PER_MINUTE) + seconds);
+    }
+
     public static String getDurationString(int minutes, int seconds) {
         return getDurationStringBySeconds((minutes * INST_SECOND_PER_MINUTE) + seconds);
     }
