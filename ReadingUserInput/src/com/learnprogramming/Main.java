@@ -25,8 +25,6 @@ public class Main {
             System.out.println("Unable to parse age");
         }
 
-
-
         scanner.close();
     }
 }
