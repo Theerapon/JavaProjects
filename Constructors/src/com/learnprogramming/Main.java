@@ -17,5 +17,16 @@ public class Main {
         emptyAccount.withdrawFunds(200);
         emptyAccount.depositFunds(456);
         emptyAccount.withdrawFunds(200);
+
+        System.out.println();
+        VipCustomer person1 = new VipCustomer();
+        System.out.println(person1.getCustomerName());
+
+        VipCustomer person2 = new VipCustomer("Bob", 25000);
+        System.out.println(person2.getCustomerName());
+
+        VipCustomer person3 = new VipCustomer("Fakie", 100000, "Theerapon.nanoi.185@gmail,com");
+        System.out.println(person3.getCustomerName());
+        System.out.println(person3.getCustomerEmailAddress());
     }
 }
