@@ -25,7 +25,7 @@ public class Printer {
         } else {
             this.tonerLevel += amount;
         }
-        System.out.println("Fill up successful");
+        System.out.println("Fill up " + amount + " successful");
         showCurrentTonerLevel();
     }
 
