@@ -1,10 +1,20 @@
 package com.learnprogramming;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        List<Boolean> list = new ArrayList<>();
+        list.add(true);
+        list.add(Boolean.parseBoolean("FalSe"));
+        list.add(Boolean.TRUE);
+        System.out.println(list.size());
+        System.out.println(list.get(0));
+        System.out.println("instanceof: " + (list.get(0) instanceof Boolean));
+
 	    Calculator calculator = new Calculator();
         /*System.out.println(calculator.calcGCDByEuclidean(7632, 273));
         System.out.println(calculator.calcLCMByFormula(7632, 273));*/
