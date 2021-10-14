@@ -17,7 +17,7 @@ public class Calculator {
         return (long)Math.abs(firstNumber * secondNumber) / calcGCDByEuclidean(firstNumber, secondNumber);
     }
 
-    public long calcLCMVyFormula(long firstNumber, long secondNumber, long gcdValue) {
+    public long calcLCMByFormula(long firstNumber, long secondNumber, long gcdValue) {
         return (long)Math.abs(firstNumber * secondNumber) / gcdValue;
     }
 
