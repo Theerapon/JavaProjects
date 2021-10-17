@@ -1,8 +1,6 @@
 package com.learnprogramming;
 
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Album {
@@ -42,11 +40,11 @@ public class Album {
 
     private class SongList {
         private ArrayList<Song> songs;
-        public SongList() {
+        private SongList() {
             this.songs = new ArrayList<Song>();
         }
 
-        public boolean add(Song song) {
+        private boolean add(Song song) {
             if (songs.contains(song)) {
                 return false;
             }
@@ -63,7 +61,7 @@ public class Album {
             return null;
         }
 
-        public Song findSong(int trackNumber) {
+        private Song findSong(int trackNumber) {
             int index = trackNumber - 1;
             if ((index > 0) && (index < songs.size())) {
                 return songs.get(index);
